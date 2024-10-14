@@ -12,7 +12,7 @@ $axure.loadCurrentPage(
     var b = "url",
       c = "fst.html",
       d = "generationDate",
-      e = new Date(1713944007197.48),
+      e = new Date(1724833910576.23),
       f = "defaultAdaptiveView",
       g = "name",
       h = "",
