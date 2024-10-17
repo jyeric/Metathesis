@@ -32,7 +32,7 @@ jobs:
         git add .
         git commit -m "New Files Update Detected"
         DATE=$(date +'%Y%m%d')
-        git tag DATE
+        git tag $DATE
     
     - name: Push changes
       uses: ad-m/github-push-action@master
