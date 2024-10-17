@@ -22,14 +22,20 @@ jobs:
     - name: Python Script
       run: python index.py
 
+    - name: Format JS files and sort file.info file
+      run: python formatcode.py
+
     - name: Commit changes
       run: |
         git config --local user.email "actions@github.com"
         git config --local user.name "GitHub Actions"
         git add .
         git commit -m "New Files Update Detected"
+        DATE=$(date +'%Y%m%d')
+        git tag DATE
     
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
+        tag: true
