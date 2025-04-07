@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<svg version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="280px" height="25px" viewBox="833 531  280 25" xmlns="http://www.w3.org/2000/svg">
+<svg version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="280px" height="25px" viewBox="833 528  280 25" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient gradientUnits="userSpaceOnUse" x1="1049.69565217391" y1="252.5" x2="1049.69565217391" y2="933.5" id="LinearGradient1">
+    <linearGradient gradientUnits="userSpaceOnUse" x1="1049.69565217391" y1="249.5" x2="1049.69565217391" y2="930.5" id="LinearGradient1">
       <stop id="Stop2" stop-color="#0a4322" offset="0" />
       <stop id="Stop3" stop-color="#0a4322" offset="0.06" />
       <stop id="Stop4" stop-color="#0a4322" offset="0.09" />
@@ -9,5 +9,5 @@
       <stop id="Stop6" stop-color="#000000" offset="1" />
     </linearGradient>
   </defs>
-  <path d="M 834 532  L 1112 532  L 1112 555  L 834 555  L 834 532  Z " fill-rule="nonzero" fill="url(#LinearGradient1)" stroke="none" />
+  <path d="M 834 529  L 1112 529  L 1112 552  L 834 552  L 834 529  Z " fill-rule="nonzero" fill="url(#LinearGradient1)" stroke="none" />
 </svg>
