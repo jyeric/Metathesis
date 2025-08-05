@@ -3,6 +3,8 @@ import requests
 from bs4 import BeautifulSoup
 from urllib.parse import urljoin, urlparse, urldefrag
 import hashlib
+import urllib3
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 def save_content(url, content, base_path):
     """保存网页内容到本地文件系统"""
@@ -22,7 +24,7 @@ def save_content(url, content, base_path):
 
 def get_content(url):
     """获取网页内容"""
-    response = requests.get(url)
+    response = requests.get(url, verify=False)
     response.raise_for_status()
     return response.content
 
@@ -140,6 +142,47 @@ if __name__ == '__main__':
     start_url = 'http://www.evvh-yyq-m.top/resources/reload.html'
     base_path = 'public'
     crawl(start_url, base_path)
+    """
+    20250805新增，应对202410页面更新
+    """
+    start_url = 'https://www.evvh-yyq-m.top/dairy-2122.html'
+    base_path = 'public'
+    crawl(start_url, base_path)
+    start_url = 'https://www.evvh-yyq-m.top/dairy-2324.html'
+    base_path = 'public'
+    crawl(start_url, base_path)
+    """
+    20250805新增，应对202410页面二次更新
+    """
+    start_url = 'https://www.evvh-yyq-m.top/catholics.html'
+    base_path = 'public'
+    crawl(start_url, base_path)
+    start_url = 'https://www.evvh-yyq-m.top/catholics-1.html'
+    base_path = 'public'
+    crawl(start_url, base_path)
+    start_url = 'https://www.evvh-yyq-m.top/catholics-2.html'
+    base_path = 'public'
+    crawl(start_url, base_path)
+    start_url = 'https://www.evvh-yyq-m.top/catholics-3.html'
+    base_path = 'public'
+    crawl(start_url, base_path)
+    start_url = 'https://www.evvh-yyq-m.top/error-1.html'
+    base_path = 'public'
+    crawl(start_url, base_path)
+    start_url = 'https://www.evvh-yyq-m.top/1.MP3'
+    base_path = 'public'
+    crawl(start_url, base_path)
+    start_url = 'https://www.evvh-yyq-m.top/2.MP3'
+    base_path = 'public'
+    crawl(start_url, base_path)
+    """
+    20250805更新，应对202503页面小更新
+    """
+    start_url = 'https://www.evvh-yyq-m.top/dairy-2526.html'
+    base_path = 'public'
+    crawl(start_url, base_path)
+
+
     
     folder_path = 'public'
     traverse_and_calculate_sha256(folder_path)
