@@ -181,7 +181,15 @@ if __name__ == '__main__':
     start_url = 'https://www.evvh-yyq-m.top/dairy-2526.html'
     base_path = 'public'
     crawl(start_url, base_path)
-
+    """
+    20251013/14更新，群友提供
+    """
+    start_url = 'https://www.evvh-yyq-m.top/projectd.html'
+    base_path = 'public'
+    crawl(start_url, base_path)
+    start_url = 'https://www.evvh-yyq-m.top/mypagee.html'
+    base_path = 'public'
+    crawl(start_url, base_path)
 
     
     folder_path = 'public'
